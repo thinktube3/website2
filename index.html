@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>페스티벌 홍보</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: url('https://example.com/festival-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">페스티벌</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#schedule">일정</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">문의</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay text-center">
+      <h1>2024 페스티벌</h1>
+      <p>즐거움과 함께하는 최고의 페스티벌!</p>
+      <a href="#schedule" class="btn btn-primary">일정 보기</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>페스티벌 소개</h2>
+        <p>2024년 최고의 음악과 축제가 가득한 페스티벌! 다양한 아티스트와 함께 특별한 경험을 만들어보세요.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://example.com/festival-about.jpg" alt="Festival Image" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">일정</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 1</h5>
+              <p class="card-text">4월 1일 - 오프닝 세레모니와 공연</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 2</h5>
+              <p class="card-text">4월 2일 - 다양한 아티스트와 라이브 공연</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Day 3</h5>
+              <p class="card-text">4월 3일 - 특별 게스트와 함께하는 피날레</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h2 class="text-center mb-5">문의하기</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">이름</label>
+        <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">이메일</label>
+        <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">메시지</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="문의 내용을 입력하세요"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">보내기</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 페스티벌. 모든 권리 보유.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
